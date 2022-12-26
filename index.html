@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <body>
+      <div class="grid-container">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="galaxyBgVideo.mp4" type="video/mp4">
+            </video>
+        <div class="item1 player player--0 player--active">
+          <div class="top">
+          <h2 class="name" id="name--0">Player 1 <br/> Total score</h2>
+         </div>
+          <p class="score" id="score--0">0</p>
+          <div class="current bottom-r-l">
+            <p class="current-label">Current score</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </div>
+
+        <div class="item2">
+        <div class="top-mid"> 
+        <button class="btn btn--new ">🔄 New game</button>
+        <button class="btn btn--instructions show-modal ">
+          📑 Instructions
+        </button>
+        </div> 
+        <div>
+          <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
+       </div>
+       <div class="bottom">
+          <button class="btn btn--roll ">🎲 Roll the dice</button>
+        <button class="btn btn--hold ">📥 Hold</button>
+        </div>
+        </div>
+
+           <div class="item3 player player--1">
+            <div class="top">
+          <h2 class="name" id="name--1">Player 2 <br/> Total score</h2>
+         </div>
+          <p class="score" id="score--1">0</p>
+          <div class="current bottom-r-l">
+            <p class="current-label">Current score</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </div>
+
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Game instrucions 😍</h1>
+          <p>
+            1. When a player presses the roll dice button, the game will begin.
+          </p>
+          <p>2. The player can roll the dice until he rolls the number 1.</p>
+          <p>
+            3. If a player rolls a 1 on the dice, he will lose all the points he
+            gained in the current score div and will lose his turn.
+          </p>
+          <p>
+            4. To save what the player has collected in the total score section,
+            the player must press hold and give his turn to the opponent.
+          </p>
+          <p>
+            5. A player must earn 100 points in the total score section in order
+            to win.
+          </p>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+      
+  </body>
+</html>
