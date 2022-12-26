@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pig Game</title>
+    <title>Univers Dice Game</title>
   </head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <body>
       <div class="grid-container">
-
-            <video autoplay muted loop id="myVideo">
-                <source src="galaxyBgVideo.mp4" type="video/mp4">
-            </video>
-        <div class="item1 player player--0 player--active">
+        <div class="video-container">
+          <video autoplay muted loop id="myVideo">
+            <source src="galaxyBgVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="leftSide-bar player player--0 player--active">
           <div class="top">
           <h2 class="name" id="name--0">Player 1 <br/> Total score</h2>
          </div>
@@ -25,12 +26,14 @@
           </div>
         </div>
 
-        <div class="item2">
+        <div class="middle-bar">
         <div class="top-mid"> 
         <button class="btn btn--new ">🔄 New game</button>
         <button class="btn btn--instructions show-modal ">
           📑 Instructions
         </button>
+        
+
         </div> 
         <div>
           <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
@@ -41,7 +44,7 @@
         </div>
         </div>
 
-           <div class="item3 player player--1">
+           <div class="rightSide-bar player player--1">
             <div class="top">
           <h2 class="name" id="name--1">Player 2 <br/> Total score</h2>
          </div>
@@ -52,9 +55,9 @@
           </div>
         </div>
 
-        <div class="modal hidden">
+        <div class="modal hidden ">
           <button class="close-modal">&times;</button>
-          <h1>Game instrucions 😍</h1>
+          <h1>🎲 Game Instructions! </h1>
           <p>
             1. When a player presses the roll dice button, the game will begin.
           </p>
